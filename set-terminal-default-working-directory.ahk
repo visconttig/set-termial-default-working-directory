@@ -9,8 +9,15 @@ SetTitleMatchMode, 2
 ; ;=============================================
 
 ; Target directory (dynamic version)
-targetDir := A_UserName "\\OneDrive\\Desktop\\html-projects"
-fullPath := "C:\\Users\\" . targetDir
+; For Windows:
+; targetDir := A_UserName "\\OneDrive\\Desktop\\html-projects"
+; fullPath := "C:\\Users\\" . targetDir
+
+; For Linux:
+fullPath := "/home/geronimo/html-projects"
+
+
+
 
 ; Prevent repeat execution
 alreadyExecuted := false
